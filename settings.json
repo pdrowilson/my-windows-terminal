@@ -1,0 +1,108 @@
+{
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  // Add custom actions and keybindings to this array.
+  // To unbind a key combination from your defaults.json, set the command to "unbound".
+  // To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
+  "actions": 
+  [
+		// Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
+		// These two lines additionally bind them to Ctrl+C and Ctrl+V.
+		// To learn more about selection, visit https://aka.ms/terminal-selection
+	{
+		"command": 
+			{
+					"action": "copy",
+					"singleLine": false
+			},
+			"keys": "ctrl+c"
+		},
+		{
+			"command": "paste",
+			"keys": "ctrl+v"
+		},
+		// Press Ctrl+Shift+F to open the search box
+		{
+			"command": "find",
+			"keys": "ctrl+shift+f"
+		},
+		// Press Alt+Shift+D to open a new pane.
+		// - "split": "auto" makes this pane open in the direction that provides the most surface area.
+		// - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
+		// To learn more about panes, visit https://aka.ms/terminal-panes
+		{
+			"command": 
+			{
+					"action": "splitPane",
+					"split": "auto",
+					"splitMode": "duplicate"
+			},
+			"keys": "alt+shift+d"
+		}
+  ],
+  "copyFormatting": "none",
+  "copyOnSelect": false,
+  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+  "initialCols": 105,
+  "initialRows": 25,
+  "profiles": 
+  {
+		"defaults": 
+		{
+			"acrylicOpacity": 0.40000000000000002,
+			"cursorShape": "underscore",
+			"fontFace": "Cascadia Code PL",
+			"fontSize": 10,
+			"icon": "C:\\Users\\pdrow\\Pictures\\icons\\squirtle.png",
+			"startingDirectory": "C:\\Users\\pdrow\\Desktop\\Pedro Workspace\\Projects",
+			"useAcrylic": true
+		},
+		"list": 
+		[
+			{
+				"colorScheme": "Galizur",
+				"commandline": "powershell.exe",
+				"guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+				"hidden": false,
+				"name": "Windows PowerShell"
+			},
+			{
+				"commandline": "cmd.exe",
+				"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+				"hidden": false,
+				"name": "Prompt de comando"
+			},
+			{
+				"guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+				"hidden": false,
+				"name": "Azure Cloud Shell",
+				"source": "Windows.Terminal.Azure"
+			}
+		]
+  },
+  "schemes": 
+  [
+		{
+			"name": "Galizur",
+			"black": "#223344",
+			"red": "#aa1122",
+			"green": "#a1ff86",
+			"yellow": "#ccaa22",
+			"blue": "#2255cc",
+			"purple": "#7755aa",
+			"cyan": "#2565a0",
+			"white": "#8899aa",
+			"brightBlack": "#556677",
+			"brightRed": "#ff1133",
+			"brightGreen": "#33ff11",
+			"brightYellow": "#ffdd33",
+			"brightBlue": "#3377ff",
+			"brightPurple": "#aa77ff",
+			"brightCyan": "#00e1ff",
+			"brightWhite": "#bbccdd",
+			"background": "#1d1f21",
+			"foreground": "#ddeeff",
+			"selectionBackground": "#071317",
+			"cursorColor": "#ddeeff"
+		}
+  ]
+}
